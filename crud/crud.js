@@ -65,7 +65,7 @@ router.post('/find', async (req, res) => {
     if (!data) {
         return res.json({
             success: false
-        })
+        });
     }
 
     res.json({
