@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const { ObjectId } = require('mongodb');
 const MongoClient = require('mongodb').MongoClient;
-// const url = "mongodb+srv://dbUser:Password123@cluster0-y9dsi.mongodb.net/tasks_list?retryWrites=true&w=majority'";
 const user = process.env.DB_USER;
 const password = process.env.DB_PASSWORD;
 const url = `mongodb+srv://${user}:${password}@cluster0-y9dsi.mongodb.net/tasks_list?retryWrites=true&w=majority`
