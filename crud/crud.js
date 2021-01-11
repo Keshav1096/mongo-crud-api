@@ -34,7 +34,6 @@ router.post('/insert', async (req, res) => {
         success: true,
         data: data.insertedId
     });
-    await client.close();
 });
 
 
@@ -71,7 +70,6 @@ router.post('/find', async (req, res) => {
         success: true,
         data: data
     });
-    await client.close();
 });
 
 
@@ -102,7 +100,6 @@ router.post('/update', async (req, res) => {
         success: true,
         message: `Updated ${data.result.nModified} documents`
     });
-    await client.close();
 });
 
 
